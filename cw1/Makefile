@@ -158,10 +158,18 @@ clean:
 	@${MAKE} --no-print-directory -C triangles-test -f Makefile clean
 	@${MAKE} --no-print-directory -C blit-benchmark -f Makefile clean
 	@${MAKE} --no-print-directory -C lines-benchmark -f Makefile clean
+	@echo "Cleaning build files..."
+	@rm -rf bin/* 
+	@rm -rf lib/* 
+	@rm -rf _build_/*
+	@find . -name "*.o" -delete
+	@find . -name "*.d" -delete
+	@find . -name "*.a" -delete
+	@find . -name "*.exe" -delete
 
 help:
 	@echo "Usage: make [config=name] [target]"
-	@echo ""
+	@echo ""`
 	@echo "CONFIGURATIONS:"
 	@echo "  debug_x64"
 	@echo "  release_x64"

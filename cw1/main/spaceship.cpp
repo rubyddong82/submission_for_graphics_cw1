@@ -86,7 +86,7 @@ static constexpr float s = 5.0f;
 		{ s * -20.f, s * 22.f },  
 		{ s * -35.f, s * 18.f }, 
 		{ s * -55.f, s * 16.f }, 
-		{ s * -70.f, s * 14.f },  
+		{ s * -70.f, s * 14.f }, 
 		{ s * -85.f, s *  8.f },
 
 		{ s * -85.f, s * -8.f },
